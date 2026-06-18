@@ -562,10 +562,29 @@ footer {
   background-color: #0a1a3c; /* subtle background for contrast */
 }
 .footer-follow {
-  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-size: 18px;
-  letter-spacing: 1px;
-  color: #f1f5f9; /* brighter FOLLOW text */
+  color: #fff;
+  font-weight: 600;
+}
+.footer-follow a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #222;
+  transition: 0.3s ease;
+}
+.footer-follow a:hover {
+  background: #ff004f;
+  transform: translateY(-3px);
 }
 .footer-follow .btn-link {
   color: #f8fafc;
@@ -580,6 +599,7 @@ footer {
 /* Font Awesome icon alignment */
 .footer-follow i {
   vertical-align: middle;
+  pointer-events: none;
 }
 footer p {
   margin-top: 10px;
