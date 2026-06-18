@@ -554,16 +554,37 @@ section{
 /* =========================================================
    FOOTER
 ========================================================= */
-footer{
-  text-align:center;
-  padding:40px 20px;
-  color:#94a3b8;
-  margin-top:40px;
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #e2e8f0;
+  margin-top: 40px;
+  background-color: #0a1a3c; /* subtle background for contrast */
 }
-.footer-follow{
-  margin-bottom:15px;
-  font-size:18px;
-  letter-spacing:1px;
+.footer-follow {
+  margin-bottom: 15px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #f1f5f9; /* brighter FOLLOW text */
+}
+.footer-follow .btn-link {
+  color: #f8fafc;
+  margin: 0 6px;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+.footer-follow .btn-link:hover {
+  color: #60a5fa; /* LinkedIn blue accent */
+  transform: translateY(-3px);
+}
+/* Font Awesome icon alignment */
+.footer-follow i {
+  vertical-align: middle;
+}
+footer p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #cbd5e1; /* softer bright gray */
 }
 /* =========================================================
    GLOBAL FIXES (IMPORTANT FOR STABILITY)
@@ -985,6 +1006,7 @@ class="btn btn-outline">
 </a>
 </div>
 </div>
+</div>
 
 <div class="hero-right">
 
@@ -1196,7 +1218,7 @@ Open for research collaboration, embedded systems development, RF engineering pr
 <footer class="footer">
   <div class="footer-follow">
     FOLLOW:
-      <a href="https://www.facebook.com/godavarthi.saianirudh.9" class="btn-link" target="_blank">
+    <a href="https://www.facebook.com/godavarthi.saianirudh.9" class="btn-link" target="_blank">
       <i class="fab fa-facebook"></i>
     </a>
     <a href="https://www.instagram.com/_madhan__mohan" class="btn-link" target="_blank">
