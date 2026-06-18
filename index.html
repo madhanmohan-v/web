@@ -971,19 +971,18 @@ img{
 <p>I'm passionate about java developer</p>
 
 <div class="hero-buttons">
-
+<button id="followBtn" class="btn btn-primary" style="font-size: 20px;"> Follow </button>
+<div id="socialButtons" style="display: none; margin-top: 15px;">
 <a href="https://github.com/madhanmohan-v"
 target="_blank"
 class="btn btn-primary">
 <i class="fab fa-github"></i> GitHub
 </a>
-
 <a href="https://www.linkedin.com/in/madhan-mohan-6a79a4209/"
 target="_blank"
 class="btn btn-outline">
 <i class="fab fa-linkedin"></i> LinkedIn
 </a>
-
 </div>
 </div>
 
@@ -1197,9 +1196,24 @@ Open for research collaboration, embedded systems development, RF engineering pr
 <footer class="footer">
   <div class="footer-follow">
     FOLLOW:
-    <a href="https://github.com/madhanmohan-v" class="btn-link" target="_blank">GITHUB</a>
-    <a href="https://www.linkedin.com/in/madhan-mohan-6a79a4209/" class="btn-link" target="_blank">LINKEDIN</a>
-    <a href="https://x.com/madhanm07219329" class="btn-link" target="_blank">TWITTER</a>
+      <a href="https://www.facebook.com/godavarthi.saianirudh.9" class="btn-link" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/_madhan__mohan" class="btn-link" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/@madhanmohan2920" class="btn-link" target="_blank">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://x.com/madhanm07219329" class="btn-link" target="_blank">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/vanapalli-madhan-mohan-6a79a4209/" class="btn-link" target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/madhanmohan-v" class="btn-link" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
   </div>
 
   <p>© 2026 Madhan Mohan Vanapalli | Built with HTML CSS & JavaScript</p>
@@ -1207,6 +1221,9 @@ Open for research collaboration, embedded systems development, RF engineering pr
 
 <!-- JAVASCRIPT -->
 <script>
+document.getElementById("followBtn").addEventListener("click", function () {
+document.getElementById("socialButtons").style.display = "block";
+});
 /* =========================================================
    HERO FLIP
 ========================================================= */
